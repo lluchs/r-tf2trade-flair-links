@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<script>
+		opera.extension.onmessage = function(event) {
+			var xhr = new window.XMLHttpRequest();
+			xhr.open("GET", "http://steamcommunity.com/profiles/" + event.data, true);
+			xhr.onreadystatechange = function() {
+				if(xhr.responseText.length)
+					opera.extension.broadcastMessage(event.data + "|" + xhr.responseText);
+			}
+			xhr.send(null);
+		}
+	</script>
+</html>

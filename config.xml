@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets">
+	<name>/r/tf2trade flares</name>
+	<description>Makes /r/tf2trade flares clickable</description>
+	<author>luchs/zedadex</author>
+	<icon src="icon.png" />
+	<access origin="http://steamcommunity.com" />
+</widget>
